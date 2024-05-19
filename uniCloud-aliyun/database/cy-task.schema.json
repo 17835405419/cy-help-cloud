@@ -1,0 +1,92 @@
+{
+	"bsonType": "object",
+	"required": [
+		"goods_sn",
+		"status",
+		"category_id",
+		"task_desc"
+	],
+	"permission": {
+		"read": true,
+		"create": "auth.uid != null",
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（商品 ID），系统自动生成"
+		},
+		"author_id": {
+			"bsonType": "string",
+			"description": "发布者id",
+			"foreignKey": "uni-id-users._id",
+			"defaultValue": {
+				"$env": "uid"
+			}
+		},
+		"category_id": {
+			"bsonType": "string",
+			"description": "任务分类 id，参考`opendb-mall-categories`表",
+			"foreignKey": "cy-task-categories._id" 
+		},
+		"task_desc": {
+			"bsonType": "string",
+			"description": "任务的详细描述",
+			"title": "任务详情",
+			"trim": "both"
+		},
+		"price": {
+			"bsonType": "int",
+			"description": "商品价格",
+			"title": "价格"
+		},
+		"start": {
+			"bsonType": "string",
+			"description": "起点",
+			"trim": "both"
+		},
+		"end":{
+			"bsonType": "string",
+			"description": "终点",
+			"trim": "both"
+		},
+		"add_date": {
+			"bsonType": "timestamp",
+			"description": "发布时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"last_modify_date": {
+			"bsonType": "timestamp",
+			"description": "最后修改时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"task_note": {
+			"bsonType": "string",
+			"description": "任务备注",
+			"trim": "both"
+		},
+		"status":{
+			"bsonType": "int",
+			"description": "任务状态 0 未完成 1 已接单 2 已完成 ",
+			"enum": [{
+					"text": "未完成",
+					"value": 0
+				},
+				{
+					"text": "已接单",
+					"value": 1
+				},
+				{
+					"text": "已完成",
+					"value": 2
+				}
+			],
+			"defaultValue":0
+		}
+	},
+	"version": "0.0.1"
+}

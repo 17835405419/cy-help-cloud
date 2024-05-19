@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-avatar": "/uni_modules/uview-ui/components/u-avatar/u-avatar",
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag"
+  }
+}

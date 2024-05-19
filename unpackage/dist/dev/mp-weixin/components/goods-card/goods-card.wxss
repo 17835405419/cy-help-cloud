@@ -1,0 +1,18 @@
+.goods_item {
+  box-sizing: border-box;
+  width: calc(50vw - 20rpx);
+  padding: 20rpx;
+  margin: 15rpx 10rpx;
+  box-shadow: 0 12rpx 20rpx 0 rgba(0, 0, 0, 0.1);
+}
+.goods_item .title {
+  margin: 20rpx 0;
+  font-weight: 500;
+  font-size: 32rpx;
+  width: 100%;
+}
+.goods_item .goods_sbox {
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,237 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "二手商城",
+
+				"navigationStyle": "custom"
+
+			}
+		}, {
+			"path": "pages/run/run",
+			"style": {
+				"navigationBarTitleText": "校园跑腿",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/release/release",
+			"style": {
+				"navigationBarTitleText": "发布",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/idle_publish/idle_publish",
+			"style": {
+				"navigationBarTitleText": "发布闲置",
+				"enablePullDownRefresh": false
+			}
+
+		}
+		
+		,{
+		    "path" : "pages/want_buy/want_buy",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "意向求购",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/goods_details/goods_details",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "商品详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/order/order",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "创建订单",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/order_complete/order_complete",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "订单结算",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/order_list/order_list",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "全部订单",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/order_details/order_details",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "订单详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/run_publish/run_publish",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "发布任务",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/task_list/task_list",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+			"style": {
+				"navigationBarTitleText": "微信一键登录"
+			}
+		},
+		{
+			"path": "uni_modules/uni-id-pages/pages/login/login-withpwd",
+			"style": {
+				"navigationBarTitleText": "用户登录"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/deactivate/deactivate",
+			"style": {
+				"navigationBarTitleText": "注销账号"
+			}
+		}
+
+		, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/bind-mobile/bind-mobile",
+			"style": {
+				"navigationBarTitleText": "绑定手机号码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/cropImage/cropImage",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+
+		, {
+			"path": "uni_modules/uni-id-pages/pages/login/login-smscode",
+			"style": {
+				"navigationBarTitleText": "手机验证码登录"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/register/register-by-email",
+			"style": {
+				"navigationBarTitleText": "邮箱验证码注册"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/retrieve/retrieve",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/retrieve/retrieve-by-email",
+			"style": {
+				"navigationBarTitleText": "通过邮箱重置密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/common/webview/webview",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/change_pwd/change_pwd",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "修改密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/register/register-admin",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "注册管理员账号"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/set-pwd/set-pwd",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "设置密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/realname-verify/realname-verify",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "实名认证"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/shouye.png",
+				"selectedIconPath": "static/tabbar/shouye_.png"
+			},
+			{
+				"pagePath": "pages/run/run",
+				"iconPath": "static/tabbar/run.png",
+				"selectedIconPath": "static/tabbar/run_.png"
+			},
+			{
+				"pagePath": "pages/release/release",
+				"iconPath": "static/tabbar/fabu.png",
+				"selectedIconPath": "static/tabbar/fabu_.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabbar/wode.png",
+				"selectedIconPath": "static/tabbar/wode_.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

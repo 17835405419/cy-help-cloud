@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "二手商城",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-search": "/uni_modules/uview-ui/components/u-search/u-search",
+    "u-swiper": "/uni_modules/uview-ui/components/u-swiper/u-swiper",
+    "u-scroll-list": "/uni_modules/uview-ui/components/u-scroll-list/u-scroll-list",
+    "goods-card": "/components/goods-card/goods-card"
+  }
+}

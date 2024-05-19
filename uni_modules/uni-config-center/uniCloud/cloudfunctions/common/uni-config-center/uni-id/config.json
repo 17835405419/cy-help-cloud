@@ -1,0 +1,98 @@
+ {
+   "passwordSecret": [
+      {
+        "type": "hmac-sha256",
+        "version": 1
+      }
+    ],
+  "passwordStrength": "medium", 
+  "tokenSecret": "#cyshop#cloud@#", 
+  "tokenExpiresIn": 7200, 
+  "tokenExpiresThreshold": 3600, 
+  "passwordErrorLimit": 6, 
+  "passwordErrorRetryTime": 3600, 
+  "autoSetInviteCode": false,
+  "forceInviteCode": false, 
+  "userRegisterDefaultRole": [], 
+  "app": { 
+    "tokenExpiresIn": 2592000,
+    "tokenExpiresThreshold": 864000,
+    "oauth": {      
+      "weixin": {
+        "appid": "",
+        "appsecret": ""
+      },     
+      "qq": {
+        "appid": "",
+        "appsecret": ""
+      },
+      "apple": { 
+        "bundleId": ""
+      }
+    }
+  },
+  "web": { 
+    "tokenExpiresIn": 7200,
+    "tokenExpiresThreshold": 3600,
+    "oauth": {
+      "weixin-h5": { 
+        "appid": "wx7617498768d40648",
+        "appsecret": "e3627d601a19ea5c38ed49f3264899ac"
+      },
+      "weixin-web": { 
+        "appid": "",
+        "appsecret": ""
+      }
+    }
+  },
+  "mp-weixin": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {     
+      "weixin": {
+        "appid": "wx7617498768d40648",
+        "appsecret": "e3627d601a19ea5c38ed49f3264899ac"
+      }
+    }
+  },
+  "mp-qq": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {     
+      "qq": {
+        "appid": "",
+        "appsecret": ""
+      }
+    }
+  },
+  "mp-alipay": {
+    "tokenExpiresIn": 259200,
+    "tokenExpiresThreshold": 86400,
+    "oauth": {      
+      "alipay": {
+        "appid": "",
+        "privateKey": "", 
+        "keyType": "PKCS8" 
+      }
+    }
+  },
+  "service": {
+    "sms": {
+      "name": "", 
+      "codeExpiresIn": 180, 
+      "smsKey": "", 
+      "smsSecret": "", 
+      "scene": {
+        "bind-mobile": { 
+          "templateId": "", 
+          "codeExpiresIn": 240 
+        }
+      }
+    },
+    "univerify": {
+      "appid": "", 
+      "apiKey": "", 
+      "apiSecret": ""
+    }
+  }
+}

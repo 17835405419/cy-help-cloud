@@ -1,0 +1,115 @@
+{
+	"bsonType": "object",
+	"required": [
+		"order_num",
+		"goods_id",
+		"status",
+		"type",
+		"total_fee"
+	],
+	"permission": {
+		"read": "auth.uid != null",
+		"create": "auth.uid != null",
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"status": {
+			"title": "订单状态",
+			"bsonType": "int",
+			"enum": [{
+					"text": "已关闭",
+					"value": -1
+				},
+				{
+					"text": "未完成",
+					"value": 0
+				},
+				{
+					"text": "已完成",
+					"value": 1
+				}
+
+			],
+			"description": "订单状态 -1 已关闭 0：未完成 1：已完成 ",
+			"defaultValue": 0
+		},
+		"type": {
+			"title": "订单类型",
+			"bsonType": "string",
+			"description": "订单类型 goods：订单付款 tasks：任务订单 可自定义，用于判断最终执行哪个异步回调逻辑。",
+			"trim": "both"
+		},
+		"order_num":{
+			"title": "订单号",
+			"bsonType": "string",
+			"trim": "both"
+			
+		},
+		
+		"user_id": {
+			"title": "用户ID",
+			"bsonType": "string",
+			"description": "用户id，参考uni-id-users表",
+			"foreignKey": "uni-id-users._id",
+			"defaultValue":{
+				"$env": "uid"
+			}
+		},
+		"goods_id": {
+			"title": "商品ID",
+			"bsonType": "string",
+			"description": "商品id",
+			"foreignKey": "cy_goods._id"
+		},
+		"client_ip": {
+			"title": "客户端IP",
+			"bsonType": "string",
+			"description": "创建支付的客户端ip",
+			"trim": "both",
+			"defaultValue":{
+				"$env": "clientIP"
+			}
+		},
+		"openid": {
+			"title": "openid",
+			"bsonType": "string",
+			"description": "发起支付的用户openid",
+			"trim": "both"
+		},
+		"description": {
+			"title": "备注",
+			"bsonType": "string",
+			"description": "订单备注",
+			"trim": "both"
+		},
+		"total_fee": {
+			"title": "订单总金额",
+			"bsonType": "int",
+			"description": "订单总金额，单位为分，100等于1元"
+		},
+		"create_date": {
+			"title": "订单创建时间",
+			"bsonType": "timestamp",
+			"description": "订单创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		},
+		"pay_date": {
+			"title": "订单完成时间",
+			"bsonType": "timestamp",
+			"description": "订单完成时间"
+		},
+		"cancel_date": {
+			"title": "订单取消时间",
+			"bsonType": "timestamp",
+			"description": "订单取消时间"
+		}
+		
+	},
+	"version": "0.0.1"
+}

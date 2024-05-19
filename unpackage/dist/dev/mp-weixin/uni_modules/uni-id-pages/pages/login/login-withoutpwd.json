@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "微信一键登录",
+  "usingComponents": {
+    "uni-id-pages-agreements": "/uni_modules/uni-id-pages/components/uni-id-pages-agreements/uni-id-pages-agreements",
+    "uni-id-pages-fab-login": "/uni_modules/uni-id-pages/components/uni-id-pages-fab-login/uni-id-pages-fab-login"
+  }
+}
